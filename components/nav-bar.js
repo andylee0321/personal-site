@@ -15,6 +15,11 @@ const NavBar = () => {
             setNavScroll(false)
 
         bodyScroll += 80;
+
+        console.log(document.getElementById("contact"))
+        if( document.getElementById("contact") === null )
+            return
+
         if( document.getElementById("contact").offsetTop < bodyScroll ) {
             setCurrentActive("contact")
         } else if( document.getElementById("blog").offsetTop < bodyScroll ) {
