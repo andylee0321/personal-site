@@ -7,17 +7,17 @@ const Bottom = () => {
 
 			<div className="social-icon">
 				<a href="#0">
-					<span><i className="fa fa-facebook" aria-hidden="true"></i></span>
+					<span><i className="fa fa-facebook" aria-hidden="true"></i> </span>
 				</a>
 				<a href="#0">
-					<span><i className="fa fa-twitter" aria-hidden="true"></i></span>
+					<span><i className="fa fa-twitter" aria-hidden="true"></i> </span>
 				</a>
 				<a href="#0">
 					<span><i className="fa fa-youtube" aria-hidden="true"></i></span>
-				</a>
+				</a> 
 				<a href="#0">
 					<span><i className="fa fa-linkedin" aria-hidden="true"></i></span>
-				</a>
+				</a> 
 				<a href="#0">
 					<span><i className="fa fa-github" aria-hidden="true"></i></span>
 				</a>

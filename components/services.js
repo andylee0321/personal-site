@@ -9,7 +9,7 @@ const Services = () => {
 					<h4 className="tit tit-center">WHAT CAN I DO</h4>
 				</div>
 				<div className="row">
-					<div className="row services-items">
+					<div className="services-items">
 						<div className="col-md-4">
 							<div className="item">
 								<span className="icon-tools"></span>
@@ -35,7 +35,7 @@ const Services = () => {
 						</div>
 					</div>
 
-					<div className="row services-items">
+					<div className="services-items">
 						<div className="col-md-4">
 							<div className="item">
 								<span className="icon-layers"></span>

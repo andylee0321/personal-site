@@ -200,7 +200,7 @@ const Portfolio = () => {
 					<div className="filtering text-center mb-50 w-100">
                         {defFilters.map((item,idx) => (
                             <span key={idx} className={item.key === currentFilter ? "active" : ""}
-                                    onClick={() => onFilter(item.key)}>{item.label}</span>
+                                    onClick={() => onFilter(item.key)}>{item.label}</span>  
                         ))}
 					</div>
 

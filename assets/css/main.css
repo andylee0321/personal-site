@@ -17,6 +17,10 @@ html {
 	outline: none !important;
 }
 
+a::after {
+    content: ' '
+}
+
 body{
 	font-weight: 400;
 	overflow-x: hidden;
@@ -322,6 +326,7 @@ span{
   background-color: #fff;
   height: 100%;
   width: 4px;
+  margin-right: 2px;
   display: inline-block;
   
   -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
@@ -364,7 +369,7 @@ span{
 }
 
 
-.swiper-pagination-bullet {
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     width: 20px;
     height: 4px;
     border-radius: 0;    
@@ -373,7 +378,7 @@ span{
     transition: opacity .2s ease;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
     background: #c49b66;
 }
 
