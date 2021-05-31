@@ -529,12 +529,11 @@ a, a:hover, a:focus{
 -------------------------------------------------------- */
 
 .hire{
-	background-color: rgba(0,0,0,.8);
-	background-blend-mode: overlay;
-	background-image: url(../img/numbers.jpg);
+	background-image: url(../img/contact.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+	position: relative;
 }
 
 .hire h3{
