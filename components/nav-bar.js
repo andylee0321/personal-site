@@ -22,14 +22,10 @@ const NavBar = () => {
 
         if( document.getElementById("contact").offsetTop < bodyScroll ) {
             setCurrentActive("contact")
-        } else if( document.getElementById("blog").offsetTop < bodyScroll ) {
-            setCurrentActive("blog")
         } else if( document.getElementById("portfolio").offsetTop < bodyScroll ) {
             setCurrentActive("portfolio")
         } else if( document.getElementById("clients").offsetTop < bodyScroll ) {
             setCurrentActive("clients")
-        } else if( document.getElementById("services").offsetTop < bodyScroll ) {
-            setCurrentActive("services")
         } else if( document.getElementById("about").offsetTop < bodyScroll ) {
             setCurrentActive("about")
         } else {
@@ -48,7 +44,7 @@ const NavBar = () => {
     return (
         <B3Navbar collapseOnSelect expand="md" className={"land-nav " + (navScroll ? " nav-scroll" : "")}>
             <div className="navbar-header">
-                <B3Navbar.Brand href="#">Tona</B3Navbar.Brand>
+                <B3Navbar.Brand href="#">Prakash Thakuri</B3Navbar.Brand>
                 <B3Navbar.Toggle aria-controls="responsive-navbar-nav" >
                     <span className="sr-only">Toggle navigation</span>
                     <span className="icon-bar"></span>
@@ -73,9 +69,6 @@ const NavBar = () => {
                     </NavItem>
                     <NavItem eventKey="portfolio" href="#portfolio" >
                         Portfolio
-                    </NavItem>
-                    <NavItem eventKey="blog" href="#blog" >
-                        Blog
                     </NavItem>
                     <NavItem eventKey="contact" href="#contact" >
                         Contact

@@ -3,24 +3,34 @@ import SkillProgress from './skill-progress'
 
 const skill_prog = [
     {
-        title: 'Design',
+        title: 'React',
         current: 0,
-        progress: 90
+        progress: 100
     },
     {
-        title: 'Programming',
+        title: 'Vue',
         current: 0,
-        progress: 80
+        progress: 100
     },
     {
-        title: 'Branding',
+        title: 'PHP',
         current: 0,
         progress: 95
     },
     {
-        title: 'Marketing',
+        title: 'Node.js',
         current: 0,
-        progress: 75
+        progress: 90
+    },
+    {
+        title: 'D3',
+        current: 0,
+        progress: 90
+    },
+    {
+        title: 'Web3',
+        current: 0,
+        progress: 80
     }
 ]
 
@@ -74,18 +84,8 @@ const Skills = () => {
                             </div>
 
                             <div className="item-info mb-50">
-                                <h6>University of Engineering</h6>
-                                <p>Bachelor of Science</p>
-                            </div>
-
-                            <div className="item-info mb-50">
-                                <h6>College of Awesomeness</h6>
-                                <p>Master of Fine Arts</p>
-                            </div>
-
-                            <div className="item-info">
-                                <h6>School of Amusement</h6>
-                                <p>Bachelor of Fine Arts</p>
+                                <h6>Pace University</h6>
+                                <p>Master of Science (M.S.) in Computer Science</p>
                             </div>
 
                         </div>
@@ -99,20 +99,15 @@ const Skills = () => {
                             </div>
 
                             <div className="item-info mb-50">
-                                <h6>Lead Developer</h6>
-                                <p>State Art company</p>
+                                <h6>Software Developer</h6>
+                                <p>Takeo Tech</p>
                             </div>
 
                             <div className="item-info mb-50">
-                                <h6>UI/UX Developer</h6>
-                                <p>Design Corporation</p>
+                                <h6>Graduate Teaching Assistant</h6>
+                                <p>Pace University</p>
                             </div>
-
-                            <div className="item-info">
-                                <h6>Front-End Developer</h6>
-                                <p>Creative Design Studio</p>
-                            </div>
-
+                            
                         </div>
                     </div>
 

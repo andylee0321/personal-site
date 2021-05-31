@@ -183,6 +183,7 @@ a, a:hover, a:focus{
 .caption{
 	color: #fff;
 	margin-left: 10%;
+	width: 80%;
 }
 
 .caption h1{
@@ -1039,4 +1040,8 @@ a, a:hover, a:focus{
 .com-form button:hover{
 	background: transparent;
 	color: #111;
+}
+
+.hero-img img {
+	border-radius: 24px;
 }

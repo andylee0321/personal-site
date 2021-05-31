@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <div>
       <Head>
-        <title>Paul</title>
+        <title>Prakash Shahi Thakuri</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
@@ -24,26 +24,26 @@ export default function HomePage() {
       <Home />
       <span className="anchor" id="about"></span>
       <Hero />
-      <span className="anchor" id="numbers"></span>
+      {/* <span className="anchor" id="numbers"></span>
       <Numbers />
       <span className="anchor" id="services" ></span>
-      <Services />
+      <Services /> */}
       <span className="anchor" id="clients"></span>
       <Clients />
       <span className="anchor" id="portfolio" ></span>
       <Portfolio />
       
+      <span className="anchor" id="contact"></span>
+
       <section className="hire section-padding text-center">
         <div className="container">
           <h3>Start Work With Me</h3>
-          <button>Hire Me</button>
+          <a href="mailto:info@prakashthakuri.com">
+            <button>Hire Me</button>
+          </a>
         </div>
       </section>
 
-      <span className="anchor" id="blog"></span>
-      <Blog />
-      <span className="anchor" id="contact"></span>
-      <Contact />
       <Bottom />
     </div>
   )
