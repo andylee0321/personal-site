@@ -13,12 +13,32 @@ const skill_prog = [
         progress: 100
     },
     {
-        title: 'PHP',
+        title: 'Node.js',
         current: 0,
-        progress: 95
+        progress: 90
     },
     {
-        title: 'Node.js',
+        title: 'PHP',
+        current: 0,
+        progress: 90
+    },
+    {
+        title: 'Solidity',
+        current: 0,
+        progress: 90
+    },
+    {
+        title: 'ASP.NET',
+        current: 0,
+        progress: 90
+    },
+    {
+        title: 'Java',
+        current: 0,
+        progress: 90
+    },
+    {
+        title: 'C++',
         current: 0,
         progress: 90
     },
@@ -30,7 +50,7 @@ const skill_prog = [
     {
         title: 'Web3',
         current: 0,
-        progress: 80
+        progress: 100
     }
 ]
 
@@ -84,8 +104,8 @@ const Skills = () => {
                             </div>
 
                             <div className="item-info mb-50">
-                                <h6>Pace University</h6>
-                                <p>Master of Science (M.S.) in Computer Science</p>
+                                <h6>Jilin University</h6>
+                                <p>Bachelor of Computer Science</p>
                             </div>
 
                         </div>
@@ -99,13 +119,22 @@ const Skills = () => {
                             </div>
 
                             <div className="item-info mb-50">
-                                <h6>Software Developer</h6>
-                                <p>Takeo Tech</p>
+                                <h6>Senior Frontend Engineer</h6>
+                                <p>Crosswise.Finance</p>
                             </div>
 
                             <div className="item-info mb-50">
-                                <h6>Graduate Teaching Assistant</h6>
-                                <p>Pace University</p>
+                                <h6>FullStack Engineer</h6>
+                                <p>DigitalSolutions</p>
+                            </div>
+
+                            <div className="item-info mb-50">
+                                <h6>FullStack Engineer</h6>
+                                <p>Smaugs NFT</p>
+                            </div>
+
+                            <div className="item-info mb-50">
+                                <h6>Embedded Software Engineer</h6>
                             </div>
                             
                         </div>

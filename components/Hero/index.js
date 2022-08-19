@@ -1,6 +1,6 @@
 import React from "react"
 import Skills from "./skills"
-import imgHero from "../../assets/img/hero.jpg";
+import imgHero from "../../assets/img/hero.png";
 
 const Hero = () => {
     return (
@@ -20,24 +20,20 @@ const Hero = () => {
 								<h4>A passionate Software Developer focused on creative interaction</h4>
 							</div>
 							<div className="content mb-20">
-								<p className="mb-20">Hi! I am Prakash, I understand human, machine and wizard language. Please take a look around!</p>
-								<p>I am passionate about building excellect software that improves the lives of those around me. After completing my undergraduate degree in Bachelor in Information Management from Tribhuvan University, I moved to New York City, to pursue my master degree and start my career as a Software Developer. During my Master's degree at Pace University, I worked as a Graduate Teaching Assistant, and got a whole new exposure of the teaching methodology and learning practices. I now work as a Full Stack Developer</p>
+								<p className="mb-20">A top-tier, accomplished, self-motivated, and enthusiastic professional with wealth of experience of Full-Stack Developer, Web Developer and Embedded Software skills that have made me a successful and versatile individual encompassing a vast transferable skill set. I have acquired strong and effective Blockchain skills and the ability to build and lead teams to successfully achieve results. Seeking a position so that I can transfer my skills and experience into a new role where I can repeat my past performance. </p>
 							</div>
 
 							<div className="social-icon">
-								<a href="#0">
-									<span><i className="fa fa-facebook" aria-hidden="true"></i></span>
+								<a href="live:volleyvolley321">
+									<span><i className="fa fa-skype" aria-hidden="true"></i></span>
 								</a>
-								<a href="https://twitter.com/prakashthakuri">
-									<span><i className="fa fa-twitter" aria-hidden="true"></i></span>
+								<a href="https://t.me/andylee0321">
+									<span><i className="fa fa-telegram" aria-hidden="true"></i></span>
 								</a>
-								<a href="https://www.linkedin.com/in/prakashthakuri/">
-									<span><i className="fa fa-linkedin" aria-hidden="true"></i></span>
-								</a>
-								<a href="https://github.com/prakashthakuri">
+								<a href="https://github.com/webtech0321">
 									<span><i className="fa fa-github" aria-hidden="true"></i></span>
 								</a>
-								<a href="mailto:info@prakashthakuri.com">
+								<a href="mailto:volleyvolley321@hotmail.com">
 									<span><i className="fa fa-envelope" aria-hidden="true"></i></span>
 								</a>
 							</div>

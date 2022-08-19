@@ -1,20 +1,27 @@
 import React, { useEffect, useState, useRef } from "react"
 import { Modal } from "react-bootstrap"
 
+import imgCoProperty from "../assets/img/portfolio/coproperty.png";
+import imgCoinDebit from "../assets/img/portfolio/coin-debit.png";
+import imgCyOp from "../assets/img/portfolio/cyopterminal.png";
+import imgPerceptiLabs from "../assets/img/portfolio/percepti-labs.png";
+import imgRicciwawa from "../assets/img/portfolio/ricciwawa.png";
+import imgCrosswise from "../assets/img/portfolio/crosswise.png";
+import imgSmaugs from "../assets/img/portfolio/smaugs.png";
+import imgNaonow from "../assets/img/portfolio/naonow.png";
 import img01 from "../assets/img/portfolio/01.png";
 import img02 from "../assets/img/portfolio/02.png";
 import img03 from "../assets/img/portfolio/03.png";
 import img04 from "../assets/img/portfolio/04.png";
 import img05 from "../assets/img/portfolio/05.png";
 import img06 from "../assets/img/portfolio/06.png";
-import img07 from "../assets/img/portfolio/07.png";
-import img08 from "../assets/img/portfolio/08.jpg";
 
 
 const defFilters = [
     { label: 'All', key: ''},
     { label: 'React', key: 'react'},
     { label: 'Vue', key: 'vue'},
+    { label: 'Solidity', key: 'solidity'},
     { label: 'Laravel', key: 'laravel'},
     { label: 'Node.js', key: 'node'},
     { label: 'Java', key: 'java'},
@@ -24,10 +31,64 @@ const defFilters = [
 
 const data = [
     {
+        image: imgCoProperty,
+        category: "CoProperty",
+        class: "react",
+        filter: ["react", "node.js"]
+    },
+    {
+        image: imgCoinDebit,
+        link: "https://www.coindebit.io/",
+        category: "CoinDebit",
+        class: "react",
+        filter: ["react"]
+    },
+    {
+        image: imgPerceptiLabs,
+        link: "https://www.perceptilabs.com/",
+        category: "PerceptiLabs",
+        class: "vue",
+        filter: ["vue"]
+    },
+    {
+        image: imgCrosswise,
+        link: "https://crosswise.finance",
+        category: "Crosswise.Finance",
+        class: "react",
+        filter: ["react", "node.js"]
+    },
+    {
+        image: imgSmaugs,
+        link: "https://www.smaugs.com/",
+        category: "Smaugs",
+        class: "react",
+        filter: ["react", "web3", "Solidity"]
+    },
+    {
+        image: imgNaonow,
+        link: "https://www.naonow.com/",
+        category: "NaoNow",
+        class: "react",
+        filter: ["react", "node.js"]
+    },
+    {
+        image: imgRicciwawa,
+        link: "https://www.ricciwawa.com/",
+        category: "Ricciwawa",
+        class: "react",
+        filter: ["react"]
+    },
+    {
+        image: imgCyOp,
+        category: "CyOpTerminal",
+        class: "react",
+        filter: ["react", "node.js", "solidity"]
+    },
+    {
         image: img01,
         link: "https://vervoe.com",
         category: "Vervoe.com",
-        class: "react",
+        class: "web",
         filter: ["react"]
     },
     {
@@ -49,7 +110,7 @@ const data = [
         link: "https://chainbeing.com",
         category: "ChainBeing.com",
         class: "photo",
-        filter: ["node", "react", "web3"]
+        filter: ["node", "react", "web3", "solidity"]
     },
     {
         image: img05,
@@ -64,20 +125,6 @@ const data = [
         category: "AntiBlackActivity",
         class: "photo",
         filter: ["vue", "laravel", "d3"]
-    },    
-    {
-        image: img07,
-        link: "#",
-        category: "NY Trading",
-        class: "video",
-        filter: ["java"]
-    },
-    {
-        image: img08,
-        link: "#",
-        category: "Chat App",
-        class: "brand",
-        filter: ["node"]
     },
 ]
 
@@ -115,7 +162,9 @@ const Portfolio = () => {
 					<div className="gallery text-center">
                         {data.map((item, idx) => ((currentFilter === '' || checkCategory(item.filter)) &&
                             <div className={"col-md-4 item-img " + item.class} key={idx} >
-                                <img src={item.image} alt="image" />
+                                <div className="img-container">
+                                    <img src={item.image} alt="image" />
+                                </div>
                                 <div className="item-img-overlay">
                                     <div className="v-middle">
                                         <span className="icon" onClick={() => {

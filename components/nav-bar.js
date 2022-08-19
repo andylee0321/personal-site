@@ -16,7 +16,6 @@ const NavBar = () => {
 
         bodyScroll += 80;
 
-        console.log(document.getElementById("contact"))
         if( document.getElementById("contact") === null )
             return
 
@@ -24,8 +23,6 @@ const NavBar = () => {
             setCurrentActive("contact")
         } else if( document.getElementById("portfolio").offsetTop < bodyScroll ) {
             setCurrentActive("portfolio")
-        } else if( document.getElementById("clients").offsetTop < bodyScroll ) {
-            setCurrentActive("clients")
         } else if( document.getElementById("about").offsetTop < bodyScroll ) {
             setCurrentActive("about")
         } else {
@@ -44,7 +41,7 @@ const NavBar = () => {
     return (
         <B3Navbar collapseOnSelect expand="md" className={"land-nav " + (navScroll ? " nav-scroll" : "")}>
             <div className="navbar-header">
-                <B3Navbar.Brand href="#">Prakash Thakuri</B3Navbar.Brand>
+                <B3Navbar.Brand href="#">Andy Lee</B3Navbar.Brand>
                 <B3Navbar.Toggle aria-controls="responsive-navbar-nav" >
                     <span className="sr-only">Toggle navigation</span>
                     <span className="icon-bar"></span>
@@ -61,12 +58,12 @@ const NavBar = () => {
                     <NavItem eventKey="about" href="#about" >
                         About
                     </NavItem>
-                    <NavItem eventKey="services" href="#services" >
+                    {/* <NavItem eventKey="services" href="#services" >
                         Services
                     </NavItem>
                     <NavItem eventKey="clients" href="#clients" >
                         Clients
-                    </NavItem>
+                    </NavItem> */}
                     <NavItem eventKey="portfolio" href="#portfolio" >
                         Portfolio
                     </NavItem>

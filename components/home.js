@@ -4,7 +4,7 @@ import Typed from "../hooks/typed"
 
 const Home = () => {
     const retString = Typed({
-            strings: ["A REACT DEVELOPER","A VUE DEVELOPER","A PHP DEVELOPER","A NODE.JS DEVELOPER"],
+            strings: ["A WEB DEVELOPER","A BLOCKCHAIN DEVELOPER"],
             startDelay: 1000,
             backDelay: 2000}
         )
@@ -13,7 +13,7 @@ const Home = () => {
         <header id="home" className="tona-header" data-stellar-background-ratio="0.5">
             <div className="header-overlay">
                 <div className="caption v-middle">
-                    <h1>WEB DEVELOPER</h1>
+                    <h1>Software Engineer</h1>
                     <div className="type">
                         <span>I AM</span><h2>{retString}</h2>
                         <span className="typed-cursor">|</span>
