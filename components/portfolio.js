@@ -23,7 +23,7 @@ const defFilters = [
     { label: 'Vue', key: 'vue'},
     { label: 'Solidity', key: 'solidity'},
     { label: 'Laravel', key: 'laravel'},
-    { label: 'Node.js', key: 'node'},
+    { label: 'Node.js', key: 'node.js'},
     { label: 'Java', key: 'java'},
     { label: 'Web3', key: 'web3'},
     { label: 'D3', key: 'd3'},
@@ -80,6 +80,7 @@ const data = [
     },
     {
         image: imgCyOp,
+        link: "https://www.cyop.io/",
         category: "CyOpTerminal",
         class: "react",
         filter: ["react", "node.js", "solidity"]
@@ -160,8 +161,8 @@ const Portfolio = () => {
 					</div>
 
 					<div className="gallery text-center">
-                        {data.map((item, idx) => ((currentFilter === '' || checkCategory(item.filter)) &&
-                            <div className={"col-md-4 item-img " + item.class} key={idx} >
+                        {data.map((item) => ((currentFilter === '' || checkCategory(item.filter)) &&
+                            <div className={"col-md-4 item-img " + item.class} key={item.category} >
                                 <div className="img-container">
                                     <img src={item.image} alt="image" />
                                 </div>
@@ -174,6 +175,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className="overlay-info text-center">
                                         <p>{item.category}</p>
+                                        <p>{item.link ?? item.link}</p>
                                     </div>
                                 </div>
                             </div>
