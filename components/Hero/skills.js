@@ -13,6 +13,16 @@ const skill_prog = [
         progress: 100
     },
     {
+        title: 'Angular',
+        current: 0,
+        progress: 90
+    },
+    {
+        title: 'Svelte',
+        current: 0,
+        progress: 90
+    },
+    {
         title: 'Node.js',
         current: 0,
         progress: 90
@@ -40,12 +50,12 @@ const skill_prog = [
     {
         title: 'C++',
         current: 0,
-        progress: 90
+        progress: 100
     },
     {
         title: 'D3',
         current: 0,
-        progress: 90
+        progress: 100
     },
     {
         title: 'Web3',
